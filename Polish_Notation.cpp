@@ -6,6 +6,10 @@ bool isOperator(char c)
     return (!isalpha(c) && !isdigit(c));
 }
 
+string infixToPostfix(string infix)
+{
+}
+
 int getPriority(char c)
 {
     if (c == '-' || c == '+')
