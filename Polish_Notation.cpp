@@ -8,6 +8,7 @@ bool isOperator(char c)
 
 string infixToPostfix(string infix)
 {
+    infix = '(' + infix + ')';
 }
 
 int getPriority(char c)
