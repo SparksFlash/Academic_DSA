@@ -9,6 +9,9 @@ bool isOperator(char c)
 string infixToPostfix(string infix)
 {
     infix = '(' + infix + ')';
+    int l = infix.size();
+    stack<char> char_stack;
+    string output;
 }
 
 int getPriority(char c)
