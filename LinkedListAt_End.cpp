@@ -6,6 +6,8 @@ struct Node
     Node *next;
 };
 
+struct Node *head;
+
 int main()
 {
 }
