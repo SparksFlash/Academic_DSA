@@ -8,6 +8,10 @@ struct Node
 
 struct Node *head;
 
+void insert_nth(int data, int pos)
+{
+}
+
 int main()
 {
 }

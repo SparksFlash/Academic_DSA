@@ -11,16 +11,15 @@ struct Node
 
 Node *Insert(Node *head, int x)
 {
-    Node *temp = new Node();
-    temp->data = x;
-    temp->next = head;
-    head = temp;
-    return head;
+    Node *ptr = new Node();
+    ptr->data = x;
+    ptr->next = head;
+    return ptr;
 }
 
 void Print(Node *head)
 {
-    // Node *temp = head;
+    // Node *ptr = head;
     while (head != NULL)
     {
         cout << head->data << ' ';
@@ -55,19 +54,19 @@ int main()
 
 // void Insert(int x)
 // {
-//     Node *temp = new Node();
-//     temp->data = x;
-//     temp->next = head;
-//     head = temp;
+//     Node *ptr = new Node();
+//     ptr->data = x;
+//     ptr->next = head;
+//     head = ptr;
 // }
 
 // void Print()
 // {
-//     Node *temp = head;
-//     while (temp != NULL)
+//     Node *ptr = head;
+//     while (ptr != NULL)
 //     {
-//         cout << temp->data << ' ';
-//         temp = temp->next;
+//         cout << ptr->data << ' ';
+//         ptr = ptr->next;
 //     }
 //     cout << '\n';
 // }
