@@ -9,21 +9,24 @@ struct Node
 
 Node *head = NULL;
 
-void InsertAtEnd(int data)
+void InsertAt_nth(int data, int n)
 {
     Node *ptr = new Node();
     ptr->data = data;
     ptr->next = NULL;
 
-    if (head == NULL)
+    if (n == 1)
     {
+        ptr->next = head;
         head = ptr;
         return;
     }
-    Node *last = head;
-    while (last->next != NULL) // Traverse to the last node
-        last = last->next;
-    last->next = ptr; // Attach the new node at the end
+    Node *ptr1 = head;
+    for (int i = 0; i < n - 2; i++)
+        ptr1 = ptr1->next;
+
+    ptr->next = ptr1->next;
+    ptr1->next = ptr;
 }
 
 void Print()
@@ -40,12 +43,12 @@ void Print()
 int main()
 {
     head = NULL;
-    int n, data;
+    int n, data, pos;
     cin >> n;
     for (int i = 0; i < n; i++)
     {
-        cin >> data;
-        InsertAtEnd(data);
+        cin >> data >> pos;
+        InsertAt_nth(data, pos);
         Print();
     }
 }

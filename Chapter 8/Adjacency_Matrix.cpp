@@ -15,8 +15,8 @@ void initAdjMatrix(int AdjMatrix[V][V])
 
 void addEdge(int AdjMatrix[V][V], int u, int v)
 {
-    AdjMatrix[u][v] = 1;
-    AdjMatrix[v][u] = 1;
+    AdjMatrix[u - 1][v - 1] = 1;
+    AdjMatrix[v - 1][u - 1] = 1;
 }
 
 void printAdjMatrix(int AdjMatrix[V][V])

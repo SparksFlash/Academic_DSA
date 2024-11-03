@@ -10,7 +10,7 @@ void tower(int n, char beg, char aux, char end, int &count)
     else if (n == 1)
     {
 
-        cout << "move disk " << beg << " to " << end << endl;
+        cout << "move disk " << beg << " to " << end << '\n';
         count++;
     }
     else
@@ -31,8 +31,8 @@ int main()
     cin >> n;
     int count = 0;
     tower(n, 'A', 'B', 'C', count);
-    cout << "counted step by recursion: " << count << endl;
+    cout << "counted step by recursion: " << count << '\n';
 
     int x = pow(2, n) - 1;
-    cout << "counted step by formula: " << x << endl;
+    cout << "counted step by formula: " << x << '\n';
 }

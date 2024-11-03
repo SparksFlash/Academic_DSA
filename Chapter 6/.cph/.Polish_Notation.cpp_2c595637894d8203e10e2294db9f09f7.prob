@@ -1,0 +1,1 @@
+{"name":"Local: Polish_Notation","url":"/home/sourav/Academic_DSA/Chapter 6/Polish_Notation.cpp","tests":[{"id":1730542178193,"input":"","output":"abc/-pq/r-*\n*-a/bc-/pqr"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/sourav/Academic_DSA/Chapter 6/Polish_Notation.cpp","group":"local","local":true}
