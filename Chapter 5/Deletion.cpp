@@ -1,6 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-
+#include <bits/stdc++.h>
 struct Node
 {
     int data;
@@ -16,7 +14,6 @@ void linkedListTraversal(struct Node *ptr)
     }
 }
 
-// Case 1: Deleting the first element from the linked list
 struct Node *deleteFirst(struct Node *head)
 {
     struct Node *ptr = head;
@@ -25,7 +22,6 @@ struct Node *deleteFirst(struct Node *head)
     return head;
 }
 
-// Case 2: Deleting the element at a given index from the linked list
 struct Node *deleteAtIndex(struct Node *head, int index)
 {
     struct Node *p = head;
@@ -41,7 +37,6 @@ struct Node *deleteAtIndex(struct Node *head, int index)
     return head;
 }
 
-// Case 3: Deleting the last element
 struct Node *deleteAtLast(struct Node *head)
 {
     struct Node *p = head;
@@ -57,7 +52,6 @@ struct Node *deleteAtLast(struct Node *head)
     return head;
 }
 
-// Case 4: Deleting the element with a given value from the linked list
 struct Node *deleteAtIndex(struct Node *head, int value)
 {
     struct Node *p = head;
@@ -81,26 +75,20 @@ int main()
     struct Node *second;
     struct Node *third;
     struct Node *fourth;
-
-    // Allocate memory for nodes in the linked list in Heap
     head = (struct Node *)malloc(sizeof(struct Node));
     second = (struct Node *)malloc(sizeof(struct Node));
     third = (struct Node *)malloc(sizeof(struct Node));
     fourth = (struct Node *)malloc(sizeof(struct Node));
 
-    // Link first and second nodes
     head->data = 4;
     head->next = second;
 
-    // Link second and third nodes
     second->data = 3;
     second->next = third;
 
-    // Link third and fourth nodes
     third->data = 8;
     third->next = fourth;
 
-    // Terminate the list at the third node
     fourth->data = 1;
     fourth->next = NULL;
 
@@ -112,6 +100,4 @@ int main()
     // head = deleteAtLast(head);
     printf("Linked list after deletion\n");
     linkedListTraversal(head);
-
-    return 0;
 }

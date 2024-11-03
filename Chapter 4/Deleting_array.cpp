@@ -10,7 +10,7 @@ void deleteElement(int arr[], int &size, int element)
 
     if (indexToDelete > size - 1)
     {
-        cout << "Element not found in the array." << endl;
+        cout << "Element not found in the array." << '\n';
         return;
     }
     for (int i = indexToDelete; i < size - 1; ++i)

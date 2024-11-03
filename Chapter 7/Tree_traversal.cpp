@@ -53,7 +53,9 @@ int main()
     root->right->left = new Node(6);
     root->right->right = new Node(7);
 
-    // preorder(root);
-    // inorder(root);
+    preorder(root);
+    cout << '\n';
+    inorder(root);
+    cout << '\n';
     postorder(root);
 }

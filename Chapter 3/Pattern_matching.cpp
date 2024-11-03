@@ -22,7 +22,7 @@ int main()
             }
         }
         k++;
-    }
+    } 
     if (index == 0)
     {
         cout << "Error" << endl;
