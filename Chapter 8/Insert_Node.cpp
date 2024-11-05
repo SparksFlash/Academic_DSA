@@ -28,6 +28,7 @@ int main()
     addEdge(0, 2);
     addEdge(1, 3);
     addEdge(2, 4);
+    addEdge(2, 5);
 
     for (int i = 0; i < V; i++)
     {
