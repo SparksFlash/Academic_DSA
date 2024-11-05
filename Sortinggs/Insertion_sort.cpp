@@ -16,7 +16,6 @@ int32_t main()
         {
             a[jj + 1] = a[jj];
             jj--;
-            cout << jj << " ";
         }
         a[jj + 1] = current;
     }

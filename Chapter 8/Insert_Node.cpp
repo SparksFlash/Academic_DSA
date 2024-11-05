@@ -29,5 +29,14 @@ int main()
     addEdge(1, 3);
     addEdge(2, 4);
 
+    for (int i = 0; i < V; i++)
+    {
+        for (int j = 0; j < V; j++)
+        {
+            cout << adj[i][j] << " ";
+        }
+        cout << endl;
+    }
+
     insertNode(7);
 }
