@@ -10,12 +10,6 @@ int main()
         cin >> n >> k;
         while (n--)
         {
-            int x, y;
-            cin >> x >> y;
-            for (int i = 1; i <= k; i = i + x)
-            {
-                sum++;
-            }
         }
         cout << sum - n;
     }
