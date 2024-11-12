@@ -7,6 +7,7 @@ int main()
 
     st.push(1);
     st.push(2);
+    st.push(3);
 
     while (!st.empty())
     {
