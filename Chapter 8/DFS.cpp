@@ -27,4 +27,5 @@ int32_t main()
         graph[v2].push_back(v1);
     }
     DFS(0);
+    return 0;
 }
